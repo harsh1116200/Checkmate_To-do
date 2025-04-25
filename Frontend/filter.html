@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Filter Tasks - Checkmate-Todo</title>
+    <link rel="stylesheet" href="style1.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body>
+    <!-- Sidebar -->
+    <div class="sidebar">
+        <div class="profile">
+            <img src="https://storage.googleapis.com/a1aa/image/Jp3ePSBioRWAPiE5e6ruIpSSL1bMfL0IaIVrjSvUfkT8D2jOB.jpg" alt="Profile picture" width="40" height="40"/>
+            <span style="color: black;">Harsh</span>
+        </div>
+        <ul class="menu">
+            <li><a href="Add_task.html"><i class="fas fa-plus-circle"></i> Add Task</a></li>
+            <li><a href="Team.html"><i class="fas fa-user-friends"></i> Team</a></li>
+            <li><a href="Today.html"><i class="fas fa-calendar-day"></i> Today</a></li>
+            <li><a class="active" href="Filter.html"><i class="fas fa-filter"></i> Filter</a></li>
+            <li><a href="Inbox.html"><i class="fas fa-inbox"></i> Inbox</a></li>
+            <li><a href="Calendar.html"><i class="fas fa-calendar-alt"></i> Calendar</a></li>
+            <li><a href="Alarm.html"><i class="fas fa-bell"></i> Alarm</a></li>
+            <li><a href="View.html"><i class="fas fa-eye"></i> View</a></li>
+        </ul>
+        <div class="projects">
+            <h3 style="color: black;">My Projects</h3>&nbsp;
+            <ul>
+                <li><a href="#"><i class="fas fa-home"></i></i> Home </a></li>
+            </ul>
+        </div>
+    </div>
+    
+    <!-- Main Content Area -->
+    <div class="main-content">
+        <h2>Filter Tasks</h2>
+        <form id="filterForm">
+            <label for="filterType">Filter by:</label>
+            <select id="filterType">
+                <option value="date">Date</option>
+                <option value="priority">Priority</option>
+                <option value="status">Status</option>
+            </select>
+
+            <button type="submit">Apply Filter</button>
+        </form>
+    </div>
+
+    <script>
+        document.getElementById('filterForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            // Add filtering logic here
+        });
+    </script>
+</body>
+</html>
